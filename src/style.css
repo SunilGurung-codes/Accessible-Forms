@@ -174,37 +174,45 @@ h3{
 }
 
 form{
-    width: 90%;
-    max-width: 500px;
-    margin:  2em auto;
-    padding:  0.75em;
-    border: 2px solid #777;
-    border-radius: 0.2em;
+	width: 90%;
+	max-width: 600px; /* Changed from 500px */
+	margin: 2em auto;
+	padding: 1.5em; /* Changed from 0.75em */
+	border: 2px solid #777;
+	border-radius: 0.5em; /* Changed from 0.2em */
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added */
 }
 
 input, label, textarea{
 	display: block;
-	width: calc(100% - 2em);
-}
-
-input, textarea, select{
-	outline: 1px solid #222;
-	border: none;
-	border-radius: 0.2em;
+	
 }
 
 label{
 	font-size: 1.1em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	display: block;
+	width: 100%;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea{
+	width: 100%;
+	margin: 0.25em 0 1em 0;
+	padding: 0.75em;
+	border: 2px solid #ddd;
+	border-radius: 0.3em;
+	font-size: 1em;
+	transition: border-color 0.3s ease;
+	box-sizing: border-box;
 }
 
 .required{
 	color: #c71819;
-}
-
-input{
-	width: 90%;
-	margin: 0.25em auto 0.5em auto;
-	padding: 0.5em;
 }
 
 input:focus, select:focus, textarea:focus{
@@ -278,15 +286,27 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 	background-color: #063599;
 	filter: drop-shadow(8px 8px 4px #777);
 }
+
 input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-    margin: 0;
+	margin: 0;
+	width: auto;
+	flex-shrink: 0;
+	margin-top: 0.1em;
 }
 
-label[for="accept_agbs"] {
-    display: inline-block;
-    margin-left: 0.5em; 
+
+.checkbox-group {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5em;
+	margin: 1em 0;
+}
+
+.checkbox-group label {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}
 }
 footer{
 	padding: 1em;
