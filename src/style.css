@@ -225,27 +225,23 @@ input:error, select:error, textarea:error{
 }
 
 fieldset{
-	margin: 0.5em auto;
-	padding-bottom: 0.5em;
-	width: 94%;
-	border: 1px solid #222;
-	border-radius: 0.2em;
-	display: grid;
-	grid-template-columns: 30px 1fr 30px 1fr;
+	margin: 1em 0;
+	padding: 1em;
+	border: 2px solid #ddd;
+	border-radius: 0.3em;
+	background-color: #f9f9f9;
 }
 
 legend{
 	padding: 0.5em;
 }
 
-fieldset label{
-	display: inline;
-	width: 60%;
-}
-
-fieldset input{
-	display: inline;
-	width: 20px;
+legend{
+	padding: 0.5em 1em;
+	font-weight: 600;
+	background-color: white;
+	border: 2px solid #ddd;
+	border-radius: 0.3em;
 }
 
 select{
@@ -307,7 +303,7 @@ input[type="checkbox"] {
 	font-size: 1em;
 	line-height: 1.4;
 }
-}
+
 footer{
 	padding: 1em;
 	border-top: 5px solid #0a58ff;
