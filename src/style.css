@@ -142,7 +142,7 @@ nav a{
   	background-image: url("/src/background.svg");
   	background-color: rgba(77, 77, 77, 0.2);
   	background-repeat: no-repeat;
-  	background-position: right;
+ 
 	border-bottom: 5px solid #0a58ff;
 }
 
