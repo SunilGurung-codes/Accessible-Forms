@@ -35,7 +35,7 @@
                     <input id="lname" type="text" name="lastname" autocomplete="family-name" required>
             
                     <label for="email">Email Address<span class="required"> *</span></label>
-                    <input id="email" type="email"name="email" autocomplete="email" required>
+                    <input id="email" type="email" name="email" autocomplete="email" required>
             
                     <label for="phone">Phone Number</label>
                     <input id="phone" type="tel" name="phone" autocomplete="tel">
@@ -43,11 +43,16 @@
             
                 <fieldset>
                     <legend>Preferred Contact Method<span class="required"> *</span></legend>
-                    <input type="radio" id="email-contact" name="contact-method" value="email" required>
-                    <label for="email-contact">Email</label>
-            
-                    <input type="radio" id="phone-contact" name="contact-method" value="phone" required>
-                    <label for="phone-contact">Phone</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="email-contact" name="contact-method" value="email" required>
+                            <label for="email-contact">Email</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="phone-contact" name="contact-method" value="phone" required>
+                            <label for="phone-contact">Phone</label>
+                        </div>
+                    </div>
                 </fieldset>
             
                 <label for="state">State of Residence<span class="required"> *</span></label>

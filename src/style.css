@@ -232,9 +232,6 @@ fieldset{
 	background-color: #f9f9f9;
 }
 
-legend{
-	padding: 0.5em;
-}
 
 legend{
 	padding: 0.5em 1em;
@@ -264,6 +261,25 @@ input[type="radio"]{
 	outline: none;
 	border: 1px solid #222;
 	border-radius: 25%;
+}
+
+.radio-group {
+    display: flex;
+    gap: 2em;
+    margin: 0.5em 0;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.radio-item label {
+    margin: 0;
+    font-size: 1em;
+    display: inline;
+    width: auto;
 }
 
 input[type="submit"]{
