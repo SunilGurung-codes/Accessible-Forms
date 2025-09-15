@@ -278,7 +278,16 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 	background-color: #063599;
 	filter: drop-shadow(8px 8px 4px #777);
 }
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+}
 
+label[for="accept_agbs"] {
+    display: inline-block;
+    margin-left: 0.5em; 
+}
 footer{
 	padding: 1em;
 	border-top: 5px solid #0a58ff;
