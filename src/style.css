@@ -253,6 +253,7 @@ select{
     border: 2px solid #ddd;
     border-radius: 0.3em;
     font-size: 1em;
+    font-weight: 600;
     transition: border-color 0.3s ease;
     box-sizing: border-box;
 }
